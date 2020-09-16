@@ -22,7 +22,7 @@ class ServiceExpander
   private
 
   def constructor_params
-    keywords.map { |k| "#{k}: #{k}" }.join(", ")
+    keywords.map { |k| "#{k}:" }.join(", ")
   end
 
   def constructor_body

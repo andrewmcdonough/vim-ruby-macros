@@ -12,7 +12,7 @@ RSpec.describe ServiceExpander do
       attr_reader :some, :keyword, :list
       private :some, :keyword, :list
 
-      def initialize(some: some, keyword: keyword, list: list)
+      def initialize(some:, keyword:, list:)
         @some = some
         @keyword = keyword
         @list = list
@@ -28,7 +28,7 @@ RSpec.describe ServiceExpander do
         attr_reader :some, :keyword, :list
         private :some, :keyword, :list
 
-        def initialize(some: some, keyword: keyword, list: list)
+        def initialize(some:, keyword:, list:)
           @some = some
           @keyword = keyword
           @list = list
